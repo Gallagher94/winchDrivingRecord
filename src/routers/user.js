@@ -110,8 +110,7 @@ router.patch("/user/:id", async (req, res) => {
 
     await validateSingleUser(user);
 
-    console.log(user);
-    await user.save();
+    await user.save();xw
     res.status(200).send(user);
   } catch (error) {
     res.status(400).send(error);
